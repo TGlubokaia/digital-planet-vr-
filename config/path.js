@@ -23,7 +23,7 @@ const path = {
   },
 
   scss: {
-    src: pathSrc + "/sass/*.{sass,scss}",
+    src: pathSrc + "/sass/main.scss",
     watch: pathSrc + "/sass/**/*.{sass,scss}",
     dest: pathDest + "/css"
   },

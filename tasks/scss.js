@@ -21,7 +21,7 @@ const scss = () => {
     .pipe(plumber({
       errorHandler: notify.onError(error => ({
         title: "SCSS",
-        message: error.message
+        message: error
       }))
     }))
     .pipe(sassGlob())
@@ -32,7 +32,7 @@ const scss = () => {
     .pipe(dest(path.scss.dest), { sourcemaps: app.isDev })
     .pipe(rename({ suffix: ".min" }))
     .pipe(csso())
-    .pipe(dest(path.scss.dest), { sourcemaps: app.isDev });
+    .pipe(dest(path.scss.dest));
 };
 
 export { scss };
