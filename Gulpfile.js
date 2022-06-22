@@ -5,6 +5,7 @@ import { scss } from "./tasks/scss.js";
 import { img } from "./tasks/img.js";
 import { font } from "./tasks/font.js";
 import { clear } from "./tasks/clear.js";
+import { svg } from "./tasks/svg.js";
 import { app } from "./config/app.js";
 import { path } from "./config/path.js";
 
@@ -35,7 +36,7 @@ const dev = series(
   parallel(watcher, server)
 );
 
-export { html, scss, img, font }
+export { html, scss, img, font, svg }
 
 export default app.isProd
   ? build

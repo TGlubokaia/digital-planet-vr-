@@ -1,59 +1,6 @@
-body {
-  min-width: 320px;
-}
-
-header {
-  border: 5px solid goldenrod;
-}
-
-main {
-  border: 5px solid lightcoral;
-}
-
-footer {
-  border: 5px solid mediumpurple;
-}
-
-.popup {
-  border: 5px solid teal;
-}
-
-.title {
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-
-  @media (min-width: 700px) {
-    margin-left: 5.1%;
-    margin-right: 5.1%;
-  }
-}
-
-.wrapper {
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-
-  @media (min-width: 700px) {
-    margin-left: 7.2%;
-    margin-right: 7.2%;
-  }
-}
-
-.wrapper2 {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.container {
-  background-color: bisque;
-  margin: 0 2.5%;
-
-  @media (min-width: 1300px) {
-    max-width: 1240px;
-    margin: 0 auto;
-  }
-}
 
 
 
 @import "common/*.scss";
+@import "base/*.scss";
 @import "blocks/*.scss";
